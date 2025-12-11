@@ -9,4 +9,11 @@ app.get('/about', function(req, resp){
     resp.send('This is the about page for my cool application!')
 })
 
+app.get('/random/:max', function(req, resp){
+  max = parseInt(req.params.max)
+  rand = Math.floor(Math.random()*max) +1
+  console.log('Max via url is ' + max + ' rand is ' + rand)
+  resp.send('' + rand)
+})
+
 app.listen(8090)
