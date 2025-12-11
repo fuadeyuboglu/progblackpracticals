@@ -16,4 +16,11 @@ app.get('/random/:max', function(req, resp){
   resp.send('' + rand)
 })
 
+// Query string person=name
+app.get('/w', function(req, resp){
+    person = req.query.person
+    resp.send('' + person)
+})
+
+
 app.listen(8090)
