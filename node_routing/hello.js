@@ -16,11 +16,18 @@ app.get('/random/:max', function(req, resp){
   resp.send('' + rand)
 })
 
-// Query string person=name
-app.get('/w', function(req, resp){
-    person = req.query.person
-    resp.send('' + person)
-})
+app.get('/submit-name', (req, res) => {
+    // req.query is an object holding all the variables from the URL query string
+    // We access the variable named 'person'
+    const submittedName = req.query.person;
+
+    // Send a customized message back to the user
+    if (submittedName) {
+        res.send(`<h1>Hello, ${submittedName}!</h1><p>Your data was successfully received by the server.</p>`);
+    } else {
+        res.send('<h1>Hello, stranger!</h1><p>You submitted the form but didn\'t enter a name.</p>');
+    }
+});
 
 
 app.listen(8090)

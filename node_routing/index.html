@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Submission Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        form { background: #f4f4f4; padding: 20px; border-radius: 8px; max-width: 400px; }
+        input[type="text"] { width: 100%; padding: 10px; margin: 8px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        input[type="submit"] { background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Submit Your Name</h1>
+
+    <form action="http://127.0.0.1:8090/submit-name" method="GET">
+        
+        <label for="nameInput">Enter your name:</label>
+        
+        <input type="text" id="nameInput" name="person" placeholder="e.g., Alice">
+        
+        <input type="submit" value="Say Hello">
+
+    </form>
+    
+    <p>
+        **How it works:** When you click "Say Hello," the browser will navigate to: 
+        <br>
+        `http://127.0.0.1:8090/submit-name?person=YOUR_INPUT`
+    </p>
+
+</body>
+</html>
