@@ -1,0 +1,11 @@
+{
+  "name": "patato_recipies",
+  "version": "1.0.0",
+  "description": "Patato recipies which are accesed using search keys",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Batuhan",
+  "license": "ISC"
+}
