@@ -1,0 +1,14 @@
+{
+  "name": "node_routing",
+  "version": "1.0.0",
+  "description": "Programming Black 2025-2026 Week 9 Practical",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Batuhan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
